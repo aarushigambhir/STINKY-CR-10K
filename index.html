@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Congrats on 9.7k!</title>
+  <title>stinkyat9.7k</title>
   <style>
     body {
       margin: 0;
@@ -17,6 +17,22 @@
       font-family: 'Poppins', sans-serif;
       overflow: hidden;
       text-align: center;
+    }
+
+    .logo {
+      font-family: 'Impact', sans-serif;
+      font-size: 4rem;
+      color: #ffd700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #0049b7, 4px 4px 0 #001f5f, 0 0 20px #ffcc00;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
     }
 
     h1 {
@@ -36,6 +52,8 @@
       color: white;
       margin: 5px;
       font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
     }
 
     @keyframes glow {
@@ -43,15 +61,20 @@
       to { text-shadow: 0 0 25px #fff76a, 0 0 50px gold; }
     }
 
+    @keyframes shine {
+      from { transform: scale(1); opacity: 0.9; }
+      to { transform: scale(1.1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .trophy {
       font-size: 6rem;
       animation: shine 2s infinite alternate;
       filter: drop-shadow(0 0 10px gold);
-    }
-
-    @keyframes shine {
-      from { transform: scale(1); opacity: 0.9; }
-      to { transform: scale(1.1); opacity: 1; }
     }
 
     canvas {
@@ -72,14 +95,15 @@
 <body>
   <canvas id="confetti"></canvas>
   <div class="content">
+    <div class="logo">stinkyat9.7k</div>
     <div class="trophy">🏆</div>
     <h1>Congrats on 9.7k u snotty child</h1>
     <h2>I believe you'll reach 10k very soon you creash out monster 💪</h2>
-    <p>“father in law”</p>
-    <p>“aaray fawk”</p>
-    <p>“bluddypekky”</p>
-    <p>“go from zero to hero”</p>
-    <p>“dart goggins”</p>
+    <p style="animation-delay: 1s">“father in law”</p>
+    <p style="animation-delay: 2s">“aaray fawk”</p>
+    <p style="animation-delay: 3s">“bluddypekky”</p>
+    <p style="animation-delay: 4s">“go from zero to hero”</p>
+    <p style="animation-delay: 5s">“dart goggins”</p>
   </div>
 
   <script>
